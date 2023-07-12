@@ -4,7 +4,7 @@ pipeline {
  parameters { string(name: 'ENV', defaultValue: 'dev', description: 'Give environment name') }
 
  triggers {
-         cron('H/1 * * * *5')
+         cron('* * * * *5')
          }
    stages {
     stage ('compile') {
