@@ -1,18 +1,13 @@
 pipeline {
- agent { node { label 'workstation' } }
+ agent { node { label 'workstation' }
  options {
-   ansiColor('xterm')
+  ansiColor('xterm')
  }
-         stages {
-          stage ('compile') {
-            steps {
-               sh 'echo hello'
-            }
-          }
-        }
-   post {
-    always {
-     cleanWs()
+   stages {
+    stage ('compile') {
+     steps {
+      sh 'echo hello'
+     }
     }
    }
 }
