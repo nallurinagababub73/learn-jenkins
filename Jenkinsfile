@@ -4,7 +4,7 @@ pipeline {
    stage ('compile') {
     steps {
        sh 'echo hello'
-       sh 'mkdir hemasri'
+       sh 'touch file1'
        }
 
      }
