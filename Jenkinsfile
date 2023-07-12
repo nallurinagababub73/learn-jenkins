@@ -3,14 +3,13 @@ pipeline {
     options {
        ansiColor('xterm')
        }
-  stages{
-   stage ('compile') {
-    steps {
-       sh 'echo hello'
-       }
-
-     }
-   }
+         stages {
+          stage ('compile') {
+            steps {
+               sh 'echo hello'
+            }
+          }
+        }
    post {
     always {
      cleanWs()
