@@ -5,7 +5,7 @@ pipeline {
 
  triggers {
          cron('* * * * *5')
-         }
+ }
    stages {
     stage ('compile') {
      steps {
