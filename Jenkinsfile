@@ -3,8 +3,7 @@ pipeline {
 
  parameters { string(name: 'ENV', defaultValue: 'dev', description: 'Give environment name') }
 
- triggers {
-         pollSCM('H/2 * * * *')
+
  }
    stages {
     stage ('compile') {
